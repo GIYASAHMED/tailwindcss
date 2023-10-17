@@ -1,0 +1,23 @@
+{
+  "name": "tailwindcss",
+  "version": "1.0.0",
+  "description": "First tailwindproject\r <br>\r Author - Giyas Uddin Ahmed",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GIYASAHMED/tailwindcss.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GIYASAHMED/tailwindcss/issues"
+  },
+  "homepage": "https://github.com/GIYASAHMED/tailwindcss#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

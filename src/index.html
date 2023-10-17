@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- ===========Remixicon============= -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <title>Responsive || website</title>
+  <link href="/tailwindcss/dist/output.css" rel="stylesheet">
+  <!-- swiper cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<body class="font-primary">
+    <header class="w-full h-full bg-cover relative bg-no-repeat bg-[url('https://cafeu.vercel.app/_next/static/media/banner-bg.563b99ab.jpg')]">
+        <nav class="lg:py-4 w-full container mx-auto flex space-x-10 justify-between items-center fixed left-0 right-0 z-50">
+            <img src="https://cafeu.vercel.app/img/logo/logo.png" alt="">
+            
+            <ul class="sm:hidden md:hidden lg:flex w-6/12 justify-between ">
+                <li class="hover:text-red-800"><a href="#">Home</a></li>
+                <li class="hover:text-red-800"><a href="#">About Us</a></li>
+                <li class="hover:text-red-800"><a href="#">Menu</a></li>
+                <li class="hover:text-red-800"><a href="#">Blog</a></li>
+                <li class="hover:text-red-800"><a href="#">Pages</a></li>
+                <li class="hover:text-red-800"><a href="#">Contact</a></li>
+                <li class="hover:text-red-800"><a href="#"><i class="ri-search-line"></i></a></li>
+                <li class="flex"><img src="https://cafeu.vercel.app/img/icon/call.png" alt="" class="mr-3"><a href="tel:+1234567891">123 456 7891</a></li>
+            </ul>
+            
+            <div class="sm:block lg:hidden cursor-pointer">
+                <span class="text-3xl"><i class="ri-menu-2-line"></i></span>
+            </div>
+        </nav>
+
+        <!-- nav bar ends -->
+        <!-- swiper start -->
+        <div class="container mx-auto py-28">
+            <div class="swiper mySwiper w-full">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="sm:flex flex-col w-full justify-between px-14 items-center gap-2 lg:flex-row h-auto ">
+                            <div class="sm:w-12/12  capitalize text-center lg:text-left">
+                                <span>Best in cafue</span>
+                                <h1 class="sm:text-5xl">Lorem ipsum dolor sit amet.</h1>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, aliquid.</p>
+                                <button class="text-white py-4 px-10 bg-red-800 rounded-sm mt-5">Order Now</button>
+                            </div>
+                            <div class="sm:w-12/12 md:w-12/12">
+                                <img src="https://cafeu.vercel.app/img/slider/baner1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sm:flex flex-col w-full justify-between px-14 items-center gap-2 lg:flex-row h-auto ">
+                            <div class="sm:w-12/12  capitalize text-center lg:text-left">
+                                <span>Best in cafue</span>
+                                <h1 class="sm:text-5xl">Lorem ipsum dolor sit amet.</h1>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, fuga! Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Dolores, aliquid.</p>
+                                <button class="text-white py-4 px-10 bg-red-800 rounded-sm mt-5">Order Now</button>
+                            </div>
+                            <div class="sm:w-12/12 md:w-12/12">
+                                <img src="https://cafeu.vercel.app/img/slider/baner1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sm:flex flex-col w-full justify-between px-14 items-center gap-2 lg:flex-row h-auto ">
+                            <div class="sm:w-12/12  capitalize text-center lg:text-left">
+                                <span>Best in cafue</span>
+                                <h1 class="sm:text-5xl">Lorem ipsum dolor sit amet.</h1>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, fuga! Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Dolores, aliquid.</p>
+                                <button class="text-white py-4 px-10 bg-red-800 rounded-sm mt-5">Order Now</button>
+                            </div>
+                            <div class="sm:w-12/12 md:w-12/12">
+                                <img src="https://cafeu.vercel.app/img/slider/baner1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+        
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        
+        
+    </header>
+    
+
+
+    <!-- swiper cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+</html>
